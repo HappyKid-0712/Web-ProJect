@@ -9,10 +9,13 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#F2F5FF]">
-    <div class="flex justify-center items-center h-screen">
+  <body class="bg-[#F2F5FF] flex justify-center items-center h-screen">
+    <div class="relative">
       <div
-        class="flex border flex-col gap-4 rounded-xl size-[450px] bg-white p-8"
+        class="size-[450px] border rounded-2xl absolute -top-12 -left-12 bg-[#E1E9FD]"
+      ></div>
+      <div
+        class="relative flex border flex-col gap-4 rounded-2xl size-[450px] bg-white p-8"
       >
         <div>
           <p class="font-bold text-xl">Give feedback</p>
@@ -25,7 +28,7 @@
         </div>
         <div class="flex justify-between">
           <div
-            class="border rounded-sm size-16 flex flex-col justify-evenly items-center"
+            class="border rounded-sm size-16 flex flex-col justify-evenly items-center hover:shadow-rose-400/40 hover:shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +46,7 @@
             </div>
           </div>
           <div
-            class="border rounded-sm size-16 flex flex-col justify-evenly items-center"
+            class="border rounded-sm size-16 flex flex-col justify-evenly items-center hover:shadow-rose-400/40 hover:shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +64,7 @@
             </div>
           </div>
           <div
-            class="border rounded-sm size-16 flex flex-col justify-evenly items-center"
+            class="border rounded-sm size-16 flex flex-col justify-evenly items-center hover:shadow-rose-400/40 hover:shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +82,7 @@
             </div>
           </div>
           <div
-            class="border rounded-sm size-16 flex flex-col justify-evenly items-center"
+            class="border rounded-sm size-16 flex flex-col justify-evenly items-center hover:shadow-rose-400/40 hover:shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +100,7 @@
             </div>
           </div>
           <div
-            class="border rounded-sm size-16 flex flex-col justify-evenly items-center"
+            class="border rounded-sm size-16 flex flex-col justify-evenly items-center hover:shadow-rose-400/40 hover:shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,12 +114,12 @@
               />
             </svg>
             <div>
-              <p class="text-xs font-thin">Amaming</p>
+              <p class="text-xs font-thin">Amazing</p>
             </div>
           </div>
         </div>
         <div class="flex flex-col gap-1">
-          <p class="text-xs">what are the main reasons for your rating?</p>
+          <p class="text-[10px]">what are the main reasons for your rating?</p>
           <form action="">
             <input
               type="text"
@@ -134,7 +137,7 @@
                 />I may be contacted about this feedback.
                 <a
                   href=""
-                  class="text-pink-600"
+                  class="text-pink-600 hover:underline"
                   >Privacy Policy</a
                 ></label
               >
@@ -148,10 +151,21 @@
                 I'd like to help improve by joining the
                 <a
                   href=""
-                  class="text-pink-600"
+                  class="text-pink-600 hover:underline"
                   >Research Group</a
                 ></label
               >
+            </div>
+            <div class="flex justify-end mt-8 gap-3">
+              <button
+                class="border text-white bg-pink-400 text-[10px] w-[60px] h-[30px] rounded-[4px] hover:ring-2 hover:ring-pink-400"
+              >
+                Submit</button
+              ><button
+                class="border text-gray-600 bg-white-400 text-[10px] w-[60px] h-[30px] rounded-[4px] hover:ring-2 hover:ring-gray-200"
+              >
+                Cancel
+              </button>
             </div>
           </form>
         </div>
