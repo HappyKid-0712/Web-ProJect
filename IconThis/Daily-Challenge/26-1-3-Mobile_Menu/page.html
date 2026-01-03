@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title> </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="min-h-screen w-full flex justify-center items-center">
+      <svg
+        id="visual"
+        viewBox="0 0 900 600"
+        width="900"
+        height="600"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        class="z-0 absolute w-full object-cover h-full"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <rect
+          x="0"
+          y="0"
+          width="900"
+          height="600"
+          fill="#f7fbff"
+        ></rect>
+        <g fill="#ffffff">
+          <circle
+            r="147"
+            cx="876"
+            cy="147"
+          ></circle>
+          <circle
+            r="140"
+            cx="31"
+            cy="432"
+          ></circle>
+        </g>
+      </svg>
+      <!-- 背景 -->
+      <div
+        class="z-10 rounded-lg w-full max-w-[250px] bg-white min-h-[300px] px-3 py-5 shadow-3xl shadow-[#e8eefe] relative overflow-hidden shadow"
+      >
+        <div
+          class="absolute w-[285px] h-[350px] bg-[#5f7fd6] rounded-3xl right-0 top-[-260px] z-0 -rotate-12 min-w-[285px] min-h-[350px]"
+        ></div>
+        <!-- 倾斜背景 -->
+        <!-- 最外层框架 -->
+        <div class="w-full flex-col flex items-center">
+          <!-- 内层框架 -->
+          <div
+            class="relative w-full flex justify-start items-center gap-2 mb-10"
+          >
+            <!-- 背景 -->
+            <div
+              class="w-[56px] h-[56px] bg-[#7c96da] rounded-full flex justify-center items-center min-w-[56px] min-h-[56px]"
+            >
+              <img
+                src="https://i.pravatar.cc/150?u=1"
+                alt=""
+                class="rounded-full shadow-md shadow-[#6180d6] size-12"
+              />
+            </div>
+
+            <div class="flex flex-col gap-0">
+              <p class="text-white text-base">Dr.Jessica James</p>
+              <p class="text-white/60 text-[10px] font-normal">
+                Dermathologist
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full max-w-[100px] rounded-md bg-[#628cff] flex justify-center items-center gap-[2px] p-[8px] shadow-lg shadow-[#dbe3f5]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-3 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+            <a
+              href=""
+              class="text-white text-[8px] font-bold"
+              >Add Branch</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
