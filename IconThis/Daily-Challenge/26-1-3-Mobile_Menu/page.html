@@ -6,8 +6,35 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title> </title>
+    <title>Mobile Menu</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              // 设置默认 sans 为 Noto Sans SC
+              sans: ['"Noto Sans SC"', "sans-serif"],
+              // 设置一个自定义的 serif 字体
+              serif: ['"Noto Serif SC"', "serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <div class="min-h-screen w-full flex justify-center items-center">
@@ -42,21 +69,18 @@
           ></circle>
         </g>
       </svg>
-      <!-- 背景 -->
+
       <div
-        class="z-10 rounded-lg w-full max-w-[250px] bg-white min-h-[300px] px-3 py-5 shadow-3xl shadow-[#e8eefe] relative overflow-hidden shadow"
+        class="z-10 rounded-lg w-full max-w-[250px] bg-white min-h-[300px] shadow-xl shadow-[#e8eefe] relative overflow-hidden"
       >
         <div
-          class="absolute w-[285px] h-[350px] bg-[#5f7fd6] rounded-3xl right-0 top-[-260px] z-0 -rotate-12 min-w-[285px] min-h-[350px]"
+          class="absolute w-[285px] h-[350px] rounded-3xl right-0 top-[-260px] z-0 -rotate-12 min-w-[285px] min-h-[350px] bg-gradient-to-r from-[#728dd6] to-[#4c71d7] shadow-lg shadow-[#e8eefe]"
         ></div>
-        <!-- 倾斜背景 -->
-        <!-- 最外层框架 -->
-        <div class="w-full flex-col flex items-center">
-          <!-- 内层框架 -->
+
+        <div class="w-full flex flex-col items-center pt-5">
           <div
-            class="relative w-full flex justify-start items-center gap-2 mb-10"
+            class="relative w-full flex justify-start items-center gap-2 mb-10 px-3"
           >
-            <!-- 背景 -->
             <div
               class="w-[56px] h-[56px] bg-[#7c96da] rounded-full flex justify-center items-center min-w-[56px] min-h-[56px]"
             >
@@ -66,22 +90,22 @@
                 class="rounded-full shadow-md shadow-[#6180d6] size-12"
               />
             </div>
-
             <div class="flex flex-col gap-0">
-              <p class="text-white text-base">Dr.Jessica James</p>
+              <p class="text-white text-base font-medium">Dr.Jessica James</p>
               <p class="text-white/60 text-[10px] font-normal">
                 Dermathologist
               </p>
             </div>
           </div>
+
           <div
-            class="w-full max-w-[100px] rounded-md bg-[#628cff] flex justify-center items-center gap-[2px] p-[8px] shadow-lg shadow-[#dbe3f5]"
+            class="w-full max-w-[125px] rounded-md bg-[#628cff] flex justify-center items-center gap-[4px] py-2 shadow-lg shadow-[#dbe3f5] mb-6 cursor-pointer hover:bg-[#5a80eb] transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              stroke-width="2"
               stroke="currentColor"
               class="size-3 text-white"
             >
@@ -92,10 +116,160 @@
               />
             </svg>
             <a
-              href=""
-              class="text-white text-[8px] font-bold"
+              href="#"
+              class="text-white text-[10px] font-semibold"
               >Add Branch</a
             >
+          </div>
+
+          <div class="w-full flex flex-col gap-1 pb-4">
+            <!-- 五个icons -->
+            <div
+              class="group w-full h-10 flex items-center px-5 gap-3 relative cursor-pointer"
+            >
+              <div
+                class="absolute left-0 h-full w-[2px] bg-[#2675f7] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="currentColor"
+                class="size-5 text-[#bab9bb] group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                <path
+                  d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-xs text-black/70 group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                Dashboard
+              </p>
+            </div>
+            <div
+              class="group w-full h-10 flex items-center px-5 gap-3 relative cursor-pointer"
+            >
+              <div
+                class="absolute left-0 h-full w-[2px] bg-[#2675f7] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="currentColor"
+                class="size-5 text-[#bab9bb] group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                <path
+                  d="M720-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Zm-600 40q-33 0-56.5-23.5T40-200v-560q0-33 23.5-56.5T120-840h560q33 0 56.5 23.5T760-760v200h-80v-80H120v440h520v80H120Zm0-600h560v-40H120v40Zm0 0v-40 40Z"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-xs text-black/70 group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                Post sessions
+              </p>
+            </div>
+            <div
+              class="group w-full h-10 flex items-center px-5 gap-3 relative cursor-pointer"
+            >
+              <div
+                class="absolute left-0 h-full w-[2px] bg-[#2675f7] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="currentColor"
+                class="size-5 text-[#bab9bb] group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                <path
+                  d="m480-336 128-184H494l80-280H360v320h120v144ZM400-80v-320H280v-480h400l-80 280h160L400-80Zm80-400H360h120Z"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-xs text-black/70 group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                Live sessions
+              </p>
+            </div>
+            <div
+              class="group w-full h-10 flex items-center px-5 gap-3 relative cursor-pointer"
+            >
+              <div
+                class="absolute left-0 h-full w-[2px] bg-[#2675f7] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="currentColor"
+                class="size-5 text-[#bab9bb] group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                <path
+                  d="M120-160v-600q0-33 23.5-56.5T200-840h480q33 0 56.5 23.5T760-760v203q-10-2-20-2.5t-20-.5q-10 0-20 .5t-20 2.5v-203H200v400h283q-2 10-2.5 20t-.5 20q0 10 .5 20t2.5 20H240L120-160Zm160-440h320v-80H280v80Zm0 160h200v-80H280v80Zm400 280v-120H560v-80h120v-120h80v120h120v80H760v120h-80ZM200-360v-400 400Z"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-xs text-black/70 group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                Messages
+              </p>
+            </div>
+            <div
+              class="group w-full h-10 flex items-center px-5 gap-3 relative cursor-pointer"
+            >
+              <div
+                class="absolute left-0 h-full w-[2px] bg-[#2675f7] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="currentColor"
+                class="size-5 text-[#bab9bb] group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                <path
+                  d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"
+                />
+              </svg>
+
+              <p
+                class="font-medium text-xs text-black/70 group-hover:text-[#2675f7] transition-colors duration-300"
+              >
+                Locum library
+              </p>
+            </div>
+            <div class="w-full flex justify-end -mx-7 relative">
+              <button class="absolute -top-6 right-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="currentColor"
+                  class="size-6 text-[#d4d7dc] hover:text-[#2675f7] transition-colors duration-300"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
