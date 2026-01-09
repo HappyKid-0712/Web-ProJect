@@ -7,39 +7,156 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Document</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=share"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
   </head>
   <body
     class="flex w-full min-h-screen justify-center items-center bg-[#fafaff]"
   >
     <!-- 最外部容器保证定位和背景 宽度为400px flex布局 内边距-3 -->
     <div
-      class="flex flex-col items-center justify-start bg-[#ffffff] shadow-md shadow-[#ebebfd] w-full max-w-[400px] p-3"
+      class="flex flex-col items-center justify-start bg-[#ffffff] shadow-md shadow-[#ebebfd] w-full max-w-[350px]"
     >
-      <div class="head flex justify-between items-center flex-row w-full">
-        <div class="Tile">
-          <p class="font-medium text-xs">RANKING</p>
-        </div>
-        <!-- Share图标 -->
+      <div class="head flex justify-between items-center w-full p-3 pb-4">
         <div
-          class="Share flex justify-center items-center bg-[#fc5c77] rounded-xl p-[2px] w-full max-w-10"
+          class="head flex justify-between items-center flex-row w-full gap-2"
         >
-          <a href="https://x.com/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-5 text-white"
+          <div class="Tile">
+            <p class="text-sm font-bold">RANKING</p>
+          </div>
+
+          <!-- Share图标 -->
+          <div
+            class="w-full max-w-10 bg-[#f7546f] pb-[1px] max-h-10 rounded-xl hover:brightness-90 transition-colors duration-300"
+          >
+            <div
+              class="Share flex justify-center items-center bg-[#fc5c77] rounded-xl w-full p-0.5 max-w-10"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
-              />
-            </svg>
-          </a>
+              <a href="https://x.com/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 排名，react里面用map传入组件就行了 -->
+
+      <div
+        class="flex flex-row justify-between w-full text-xs font-semibold min-h-5 bg-[#f9f9f9] h-10 items-center pl-3 gap-2 relative"
+      >
+        <div class="flex justify-between gap-2 z-10 text-white">
+          <span>1</span><span>Ricard Franklin</span>
+        </div>
+        <div class="flex items-center">
+          <span class="z-10 text-white">258.244</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#ffda13"
+            class="z-10 ml-5 mr-2"
+          >
+            <path
+              d="M240-40v-329L110-580l185-300h370l185 300-130 211v329l-240-80-240 80Zm80-111 160-53 160 53v-129H320v129Zm20-649L204-580l136 220h280l136-220-136-220H340Zm98 383L296-558l57-57 85 85 169-170 57 56-226 227ZM320-280h320-320Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="absolute bg-[#5b5be6] w-[360px] h-10 z-0 top-0 right-[-5px] shadow-md shadow-[#9696b1]"
+        ></div>
+        <div
+          class="absolute w-0 h-0 border-t-[5px] border-t-[#5b5be6] border-r-[5px] border-r-transparent bottom-[-5px] right-[-5px]"
+        ></div>
+        <div
+          class="absolute w-0 h-0 border-t-[5px] border-t-[#5b5be6] border-l-[5px] border-l-transparent bottom-[-5px] left-[-5px]"
+        ></div>
+      </div>
+
+      <div
+        class="flex flex-row justify-between w-full text-xs font-semibold min-h-5 h-8 items-center px-3 gap-2"
+      >
+        <div class="flex justify-between gap-2">
+          <span>2</span><span>Brandon Lawson</span>
+        </div>
+        <span>258.244</span>
+      </div>
+      <div
+        class="flex flex-row justify-between w-full text-xs font-semibold min-h-5 bg-[#f9f9f9] h-8 items-center px-3 gap-2"
+      >
+        <div class="flex justify-between gap-2">
+          <span>3</span><span>Ruby Shelton</span>
+        </div>
+        <span>258.244</span>
+      </div>
+      <div
+        class="flex flex-row justify-between w-full text-xs font-semibold min-h-5 max-h-10 h-8 items-center px-3 gap-2"
+      >
+        <div class="flex justify-between gap-2">
+          <span>4</span><span>Jon Banks</span>
+        </div>
+        <span>258.244</span>
+      </div>
+      <div
+        class="flex flex-row justify-between w-full text-xs font-semibold min-h-5 bg-[#f9f9f9] h-8 items-center px-3 gap-2"
+      >
+        <div class="flex justify-between gap-2">
+          <span>5</span><span>Isabelle Wills</span>
+        </div>
+        <span>258.244</span>
+      </div>
+      <div class="w-full flex items-center justify-center gap-10 mt-10 mb-10">
+        <div
+          class="rounded-xl bg-white text-[#8b8c9b] text-xs font-bold hover:text-opacity-25 transition-opacity duration-100"
+        >
+          <a href="">EXIT</a>
+        </div>
+        <div
+          class="bg-[#3b3bc0] flex justify-center pb-0.5 rounded-xl max-w-[100px] w-full h-6 max-h-6"
+        >
+          <div
+            class="flex justify-center items-center bg-[#5b5be6] rounded-xl w-full hover:bg-opacity-20 transition-opacity duration-100"
+          >
+            <a
+              href=""
+              class="text-white font-bold text-xs"
+              >CONTINUE</a
+            >
+          </div>
         </div>
       </div>
     </div>
