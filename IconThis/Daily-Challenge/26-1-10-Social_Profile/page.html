@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#f6f7fc] relative">
+    <!-- 模拟响应式开发的小的个性卡片 -->
+    <div
+      class="absolute flex flex-col w-full max-w-[200px] px-10 py-10 items-center justify-center shadow-xl gap-2 right-[60%] top-10"
+    >
+      <img
+        src="https://i.pravatar.cc"
+        alt=""
+        class="rounded-full size-16"
+      />
+
+      <!-- name -->
+      <div class="flex flex-col justify-center items-center">
+        <span class="text-[#141825] font-semibold text-sm">Sally Ramos</span>
+        <span class="text-[#71767c] text-xs font-semibold">@sallytheramos</span>
+      </div>
+
+      <!-- follwing button -->
+      <div
+        class="w-full max-w-[80px] border-2 rounded-full flex items-center justify-center p-1 mt-2"
+      >
+        <button class="text-[#63686c] text-[10px] font-bold">Following</button>
+      </div>
+    </div>
+    <!-- 模拟响应式开发的中的个性卡片 -->
+    <div class="absolute top-20 right-[20%]">
+      <div
+        class="flex relative flex-col justify-start items-start w-full max-w-[300px] shadow-lg py-7 px-6 gap-6"
+      >
+        <img
+          src="https://i.pravatar.cc"
+          alt=""
+          class="rounded-full size-14"
+        />
+        <!-- sefl introduction -->
+        <div class="flex flex-col justify-center items-center">
+          <span class="text-[#141825] font-semibold text-sm"> Sally Ramos</span>
+          <span class="text-[#71767c] text-xs font-semibold"
+            >@sallytheramos</span
+          >
+        </div>
+        <div class="w-full">
+          <p class="text-[#2d3237] text-xs font-semibold">
+            Product Designer at @company.Working on @othercompany in my free
+            time.
+          </p>
+        </div>
+        <div
+          class="w-full max-w-[80px] border-2 rounded-full flex items-center justify-center p-1 absolute right-12 top-10"
+        >
+          <button class="text-[#63686c] text-[10px] font-bold">
+            Following
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
